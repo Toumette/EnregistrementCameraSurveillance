@@ -18,7 +18,7 @@ L'environnement informatique est constitué :
 
 ---
 
-### Contenu de la table "contab" :
+### Contenu de la table "crontab" :
 
     # Pas d'envoi de mail de notification :
     MAILTO=""
