@@ -28,39 +28,31 @@ name="camera1_`date +%Y-%m-%d_%H.%M`"
 
 # -----------------------------------------------------------------------------
 # Création de la variable "répertoire" où seront enregistrées les séquences vidéo :
-# rec_path='/home/nom_utilisateur/répertoire_de_rangement_des_vidéos'
 
-rec_path='/home/henri/Vidéos'
+rec_path='/home/nom_utilisateur/répertoire_de_rangement_des_vidéos'
 
 
 # -----------------------------------------------------------------------------
 # Lancement de ffmpeg pour sauvegarder le flux vidéo
 # pour une séquence d'une durée de 30 minutes (360*5=1800 s) :
 
-# ffmpeg  -i http://"admin":""@192.168.2.16:80/video.cgi \
-#        -vcodec copy -an -t 360 \
-#        $rec_path/cam01/$name.mp4 \
-#        0</dev/null \
-#        1>/dev/null \
-#        2>$rec_path/cam01/$name.logs &
-
-
-# ffmpeg  -i http://"nom_utilisateur":"mot_de_passe"@adresseIPcamera:80/video.cgi \
-#        -vcodec copy -an -t 360 \
-#        $rec_path/cam01/$name.mp4 \
-#        0</dev/null \
-#        1>/dev/null \
-#        2>$rec_path/cam01/$name.logs &
+ffmpeg  -i http://"nom_utilisateur_camera":"mot_de_passe_camera"@adresseIPcamera:80/video.cgi \
+        -vcodec copy -an -t 360 \
+        $rec_path/cam01/$name.mp4 \
+        0</dev/null \
+        1>/dev/null \
+        2>$rec_path/cam01/$name.logs &
 
 
 # Précisions sur les paramètres utilisés par ffmpeg :
 # ---------------------------------------------------
-# -i http://"nom_utilisateur":"mot_de_passe"@adresseIPcamera:80/video.cgi = données envoyées en entrée de ffmpeg,
-# soit : données de connexion + adresse IP + port + nom du service de la caméra délivrant le flux vidéo
+# -i http://"nom_utilisateur_camera":"mot_de_passe_camera"@adresseIPcamera:80/video.cgi =
+# données envoyées en entrée de ffmpeg, soit : 
+# données de connexion camera + adresse IP camera + port camera + nom du service de la caméra délivrant le flux vidéo
 
 # -vcodec copy = enregistre le flux vidéo sans le réencoder (le codec video fait juste la copie)
 
-# -an = pas d'inclusion d'audio dans le flux enregistré
+# -an = pas d'inclusion d'audio dans le flux enregistré (1 seul flux)
 
 # -t 360 = enregistre durant 360*5=1800 secondes soit 30 minutes
 
@@ -72,7 +64,7 @@ rec_path='/home/henri/Vidéos'
 # 1>/dev/null = ne fait rien des informations venant de la sortie standard (mode "silencieux")
 
 # 2>$rec_path/cam01/$name.logs = crée un fichier log horodaté
-# (pour débogage... peut être supprimé ensuite par : 2>/dev/null)
+# utile pour débogage... peut être supprimé ensuite par : 2>/dev/null
 
 # & = lance le processus ffmpeg en arrière plan - surtout utile si on doit
 # lancer plusieurs instances de ffmpeg pour enregistrer les flux de plusieurs
@@ -81,8 +73,8 @@ rec_path='/home/henri/Vidéos'
 
 # -----------------------------------------------------------------------------
 # Décommenter la ligne ci-dessous pour tester le bon lancement du script par CRON
-# (écrit simplement la date dans un fichier "test_cron" dans le répertoire des vidéos
-# avec ajout d'une nouvelle ligne à chaque exécution) :
+# Cette commande écrit simplement la date dans un fichier "test_cron" placé
+# dans le répertoire des vidéos avec ajout d'une nouvelle ligne à chaque exécution :
 
 # date >> $rec_path/cam01/test_cron
 
