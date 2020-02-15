@@ -20,22 +20,22 @@ L'environnement informatique est constitué :
 
     # Pas d'envoi de mail de notification :
     MAILTO=""
-    # Lancement enregistrements caméra de surveillance des hérissons :
-    */30 19-09 * * * /home/henri/Documents/TRAVAIL/Framasite/Developpement/PagesScience/CameraSurveillance/enreg_cam.sh 
+    # Lancement enregistrements caméra de surveillance :
+    */30 19-09 * * * /home/nom_utilisateur/chemin_du_script/enreg_cam.sh 
 
-Explications :
---------------
-*/30 => toutes les 30 mn
+### Explication de la ligne crontab :
 
-19-09 => de 19h à 9h (la nuit...)
+    */30 => à lancer toutes les 30 mn
 
-* => tous les jours dans le mois
+    19-09 => de 19h à 9h (la nuit...)
 
-* => tous les mois
+    * => tous les jours dans le mois (pas de contrôle du jour)
 
-* => tous les jours de la semaine
+    * => tous les mois (pas de contrôle du mois)
 
-/home/nom_utilisateur/chemin_du_script/enreg_cam.sh  => script à lancer en adressage absolu
+    * => tous les jours de la semaine (pas de contrôle du jour de la semaine)
+
+    /home/nom_utilisateur/chemin_du_script/enreg_cam.sh  => script à lancer en adressage absolu
 
 
 
