@@ -41,8 +41,9 @@ L'environnement informatique est constitué :
 * Veiller à ne jamais éditer directement la contab mais passer par les commandes suivantes (en mode console) :
 
     crontab -l => pour lister le contenu de la contab
-    contab -e  => pour éditer le contenu de la contab
-    
+    crontab -e  => pour éditer le contenu de la contab (et la créer, si elle n'existe pas)
+    crontab -d  => pour supprimer le contenu de la contab (et la table elle-même)
+
 
 ---
 _© Henri 15/02/20_
