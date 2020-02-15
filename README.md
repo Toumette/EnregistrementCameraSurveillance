@@ -20,6 +20,7 @@ L'environnement informatique est constitué :
 
     # Pas d'envoi de mail de notification :
     MAILTO=""
+        
     # Lancement enregistrements caméra de surveillance :
     */30 19-09 * * * /home/nom_utilisateur/chemin_du_script/enreg_cam.sh 
 
