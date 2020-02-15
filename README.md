@@ -16,6 +16,26 @@ L'environnement informatique est constitué :
 
 ---
 
+### Contenu de la table "contab" :
+
+    # Pas d'envoi de mail de notification :
+    MAILTO=""
+    # Lancement enregistrements caméra de surveillance des hérissons :
+    */30 19-09 * * * /home/henri/Documents/TRAVAIL/Framasite/Developpement/PagesScience/CameraSurveillance/enreg_cam.sh 
+
+Explications :
+--------------
+*/30 => toutes les 30 mn
+
+19-09 => de 19h à 9h (la nuit...)
+
+* => tous les jours dans le mois
+
+* => tous les mois
+
+* => tous les jours de la semaine
+
+/home/nom_utilisateur/chemin_du_script/enreg_cam.sh  => script à lancer en adressage absolu
 
 
 
