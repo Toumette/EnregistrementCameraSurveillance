@@ -38,7 +38,7 @@ L'environnement informatique est constitué :
 
     /home/nom_utilisateur/chemin_du_script/enreg_cam.sh  => script à lancer en adressage absolu
 
-* Veiller à ne jamais éditer directement la contab mais passer par les commandes suivantes (en mode console) :
+### Veiller à ne jamais éditer directement la contab mais passer par les commandes suivantes (en mode console) :
 
     crontab -l => pour lister le contenu de la contab
     crontab -e  => pour éditer le contenu de la contab (et la créer, si elle n'existe pas)
