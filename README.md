@@ -13,3 +13,11 @@ L'environnement informatique est constitué :
 1. Du paramétrage de la table "crontab" de l'utilisateur du système Linux pour lancer périodiquement le script "enreg_cam.sh".
 
 1. D'un espace suffisant pour le stockage des fichiers contenant les vidéos.
+
+
+
+
+
+
+---
+_© Henri 15/02/20_
