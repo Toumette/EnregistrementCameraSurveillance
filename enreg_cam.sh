@@ -64,7 +64,7 @@ ffmpeg  -i http://"nom_utilisateur_camera":"mot_de_passe_camera"@adresseIPcamera
 # 1>/dev/null = ne fait rien des informations venant de la sortie standard (mode "silencieux")
 
 # 2>$rec_path/cam01/$name.logs = crée un fichier log horodaté
-# utile pour débogage... peut être supprimé ensuite par : 2>/dev/null
+# utile pour débogage... peut être supprimé ensuite par : "2>/dev/null"
 
 # & = lance le processus ffmpeg en arrière plan - surtout utile si on doit
 # lancer plusieurs instances de ffmpeg pour enregistrer les flux de plusieurs
@@ -73,7 +73,7 @@ ffmpeg  -i http://"nom_utilisateur_camera":"mot_de_passe_camera"@adresseIPcamera
 
 # -----------------------------------------------------------------------------
 # Décommenter la ligne ci-dessous pour tester le bon lancement du script par CRON
-# Cette commande écrit simplement la date dans un fichier "test_cron" placé
+# Cette commande écrit simplement la date dans un fichier texte "test_cron" placé
 # dans le répertoire des vidéos avec ajout d'une nouvelle ligne à chaque exécution :
 
 # date >> $rec_path/cam01/test_cron
