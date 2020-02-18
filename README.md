@@ -2,7 +2,7 @@
 
 ### Script Bash pour enregistrer le flux vidéo issu d'une caméra de télésurveillance sous la forme de séquences d'une durée déterminée. Les fichiers générés au format MP4 sont horodatés.
 
-_Script initialement réalisé pour surveiller l'activité nocturne des hérissons que je nourris et abrite pour l'hiver dans mon jardin ! Voir les détails sur mon site._
+_Script initialement réalisé pour surveiller l'activité nocturne des hérissons que je nourris et abrite pour l'hiver dans mon jardin ! **Voir les détails sur mon site.**_
 
 * Réalisé et exécuté sous Linux OpenSuse Leap sur PC 64 bits.
 
