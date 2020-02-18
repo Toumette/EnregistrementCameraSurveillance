@@ -48,5 +48,5 @@ Veiller à ne **jamais éditer directement la crontab** mais passer par les comm
     crontab -r  => pour supprimer (pas de confirmation !!!) le contenu de la contab (et la table elle-même)
 
 ---
-_NB : Ce cript est très commenté_
+_NB : Le script ci-joint est très commenté_
 _© Henri 15/02/20_
