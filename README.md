@@ -8,13 +8,13 @@ _Script initialement réalisé pour surveiller l'activité nocturne des hérisso
 
 L'environnement informatique est constitué :
 
-1. D'un système Linux opérationnel relié au réseau local et à Internet et sur lequel l'outil "**ffmpeg**" est installé.
+1. D'un système Linux opérationnel relié au réseau local et à Internet et sur lequel l'outil "**ffmpeg**" est installé (ne pas mettre l'ordinateur en veille).
 
 1. Du script "**enreg_cam.sh**" qui effectue l'enregistrement vidéo. Ce script doit pouvoir accéder au réseau local, à la caméra et au répertoire de stockage des vidéos.
 
 1. Du paramétrage de la table "**crontab**" de l'utilisateur du système Linux pour lancer périodiquement le script "enreg_cam.sh".
 
-1. D'un espace suffisant pour le stockage des fichiers contenant les vidéos.
+1. D'un espace suffisant pour le stockage des fichiers contenant les vidéos, en local ou sur un périphérique externe de stockage préalablement monté.
 
 ---
 
