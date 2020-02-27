@@ -24,7 +24,8 @@ L'environnement informatique est constitué :
 
     # Pas d'envoi de mail de notification :
     MAILTO=""
-    # Lancement enregistrements caméra de surveillance des hérissons pour des séquences de 30 mn, toute la nuit :
+    # Lancement enregistrements caméra de surveillance des hérissons pour des séquences de 30 mn,
+    # toute la nuit :
     */30 19,20,21,22,23,0,1,2,3,4,5,6,7,8 * * * /home/nom_utilisateur/chemin_du_script/enreg_cam.sh
 
 #### Explication de la ligne crontab :
