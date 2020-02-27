@@ -18,14 +18,16 @@ L'environnement informatique est constitué :
 
 ---
 
-### Contenu de la table "crontab" :
+## Le lancement périodique par CRON
+
+#### Contenu de la table "crontab" :
 
     # Pas d'envoi de mail de notification :
     MAILTO=""
     # Lancement enregistrements caméra de surveillance des hérissons pour des séquences de 30 mn, toute la nuit :
     */30 19,20,21,22,23,0,1,2,3,4,5,6,7,8 * * * /home/nom_utilisateur/chemin_du_script/enreg_cam.sh
 
-### Explication de la ligne crontab :
+#### Explication de la ligne crontab :
 
     */30 => à lancer toutes les 30 mn
 
@@ -39,7 +41,7 @@ L'environnement informatique est constitué :
 
     /home/nom_utilisateur/chemin_du_script/enreg_cam.sh  => script à lancer en adressage absolu
 
-### Création de la crontab de l'utilisateur :
+#### Création de la crontab de l'utilisateur :
 
 Veiller à ne **jamais éditer directement la crontab** mais passer par les commandes suivantes (en mode console) :
 
