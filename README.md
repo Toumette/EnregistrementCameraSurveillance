@@ -18,7 +18,7 @@ L'environnement informatique est constitué :
 
 ---
 
-## Le lancement périodique par CRON
+## Lancement périodique par CRON
 
 #### Contenu de la table "crontab" :
 
@@ -48,6 +48,17 @@ Veiller à ne **jamais éditer directement la crontab** mais passer par les comm
     crontab -l => pour lister le contenu de la contab
     crontab -e  => pour éditer le contenu de la contab (et la créer, si elle n'existe pas)
     crontab -r  => pour supprimer (pas de confirmation !!!) le contenu de la contab (et la table elle-même)
+---
+
+## Extraction des séquences vidéo mises en ligne
+
+J'ai utilisé également "**ffmpeg**" en ligne de commande :
+
+    ffmpeg -i nom_du_fichier_de_30mn.mp4 -ss h1:m1:s1 -t h2:m2:s2 -c copy extrait1.mp4
+
+Avec :
+h1:m1:s1 : instant du début de la séquence à extraire heure:minute:seconde (dans la vidéo)
+h2:m2:s2 : durée de la séquence à extraire
 
 ---
 _NB : Le script ci-joint est très commenté_
