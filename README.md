@@ -55,11 +55,9 @@ Veiller à ne **jamais éditer directement la crontab** mais passer par les comm
 
 J'ai utilisé également "**ffmpeg**" en ligne de commande :
 
-    ffmpeg -i nom_du_fichier_de_30mn.mp4 -ss h1:m1:s1 -t h2:m2:s2 -c copy extrait1.mp4
+    ffmpeg -i nom_du_fichier_de_30mn.mp4 -ss h1:m1:s1 -t h2:m2:s2 -c copy extrait.mp4
 
-Avec :
-h1:m1:s1 : instant du début de la séquence à extraire heure:minute:seconde (dans la vidéo)
-h2:m2:s2 : durée de la séquence à extraire
+Avec h1:m1:s1 = instant du début de la séquence à extraire (heure:minute:seconde) dans la vidéo et h2:m2:s2 = durée de la séquence à extraire.
 
 ---
 _NB : Le script ci-joint est très commenté_
