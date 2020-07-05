@@ -61,4 +61,5 @@ Avec h1:m1:s1 = instant du début de la séquence à extraire (heure:minute:seco
 
 ---
 _NB : Le script ci-joint est très commenté_
-_© Henri 15/02/20_
+
+_© Henri 15/02/20 - Plus d'informations : https://henri.nitnoc.me_
